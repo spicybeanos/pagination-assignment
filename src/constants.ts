@@ -1,1 +1,1 @@
-export const API_URL = "https://67ff48fa58f18d7209f09751.mockapi.io/v1/events"
+export const API_URL = process.env.NEXT_PUBLIC_API_URL;

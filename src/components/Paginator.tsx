@@ -67,7 +67,7 @@ export default function Paginator({ posts }: { posts: APIEvent[] }) {
                 {
                     page > 3 && page <= lastPage - 3 &&
                     <div className="p-3 flex flex-row">
-                        <button className="cursor-pointer text-2xl rounded-full px-[9px] m-1">1</button>
+                        <button className="text-[#E82677] cursor-pointer text-2xl rounded-full px-[9px] m-1">1</button>
                         <div className="text-[#E82677] ">...</div>
                         <button onClick={() => { setPage(page - 1) }} className="text-[#E82677] cursor-pointer text-2xl rounded-full px-[9px] m-1">{page}</button>
                         <button onClick={() => { setPage(page) }} className="bg-[#E82677] text-white shadow-xl/30 cursor-pointer text-2xl rounded-full px-[9px] m-1">{page + 1}</button>
